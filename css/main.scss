@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+
+}
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-1{
+    
+
+    div.grid-animation-bg{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        background-color: white;
+        
+        div{
+            height: 100vh;
+        }
+        div.background{
+            background-size: cover;
+            position: relative;
+        }
+        div.layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.75;
+        }
+        div.background:nth-child(1){
+            background-image: url('../image/section-1-bg-1.jpg');
+            background-position-x: 85%;
+            .layer{
+                background-color: #009247;
+                
+            }
+        }
+        div.background:nth-child(2){
+            background-image: url('../image/section-1-bg-2.jpg');
+            background-position-x: 30%;
+            .layer{
+                background-color: #EEA767;
+                
+            }
+        }
+        div.background:nth-child(3){
+            background-image: url('../image/section-1-bg-3.jpg');
+            background-position-x: 30%;
+            .layer{
+                background-color: #8F0F02;
+                
+            }
+        }
+        div.background:nth-child(4){
+            background-image: url('../image/section-1-bg-4.jpg');
+            background-position-x: 17%;
+            .layer{
+                background-color: #1A75BB;
+                
+            }
+        }
+    }
+    h1{
+        width: 600px;
+        font-size: 5em;
+        position: absolute;
+        top: 40%;
+        left: 12%;
+        opacity: 0;
+        z-index: 2;
+    }
+    .slider-wrap {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 40%;
+    }
+    .img-hoder {
+        position: absolute;
+    }
+}

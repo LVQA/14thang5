@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-1 div.grid-animation-bg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  background-color: white;
+}
+
+.section-1 div.grid-animation-bg div {
+  height: 100vh;
+}
+
+.section-1 div.grid-animation-bg div.background {
+  background-size: cover;
+  position: relative;
+}
+
+.section-1 div.grid-animation-bg div.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(1) {
+  background-image: url("../image/section-1-bg-1.jpg");
+  background-position-x: 85%;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(1) .layer {
+  background-color: #009247;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(2) {
+  background-image: url("../image/section-1-bg-2.jpg");
+  background-position-x: 30%;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(2) .layer {
+  background-color: #EEA767;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(3) {
+  background-image: url("../image/section-1-bg-3.jpg");
+  background-position-x: 30%;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(3) .layer {
+  background-color: #8F0F02;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(4) {
+  background-image: url("../image/section-1-bg-4.jpg");
+  background-position-x: 17%;
+}
+
+.section-1 div.grid-animation-bg div.background:nth-child(4) .layer {
+  background-color: #1A75BB;
+}
+
+.section-1 h1 {
+  width: 600px;
+  font-size: 5em;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.section-1 .slider-wrap {
+  display: block;
+  position: absolute;
+  top: 25%;
+  right: 40%;
+}
+
+.section-1 .img-hoder {
+  position: absolute;
+}
+/*# sourceMappingURL=main.css.map */
